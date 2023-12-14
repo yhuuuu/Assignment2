@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="billAmount-container">
+            <h1>Tip Calculator</h1>
+            <label>Bill Amount ($): </label>
+            <input type="number" id="billAmount" value="100" placeholder="Enter bill amount">
+        </div>
+
+        <div class="CalTip-container">
+            <label> Tip Percentage (%): </label>
+            <div class="tip-buttons">
+                <button type="button" onclick="calculateTip(15)">15%</button>
+                <button type="button" onclick="calculateTip(18)">18%</button>
+                <button type="button" onclick="calculateTip(20)">20%</button>
+                <button type="button" onclick="calculateTip(25)">25%</button>
+            </div>
+
+            <input type="number" id="customTipPercentage" placeholder="Enter custom tip percentage">
+
+            <div class="cal-buttons">
+                <button type="button" onclick="clearValues()">clear</button>
+                <button type="button" onclick="calculateTip('custom')">Calculate Custom Tip
+                </button>
+            </div>
+
+
+        </div>
+
+        <div class="output-container">
+            <h3>Total Tips:</h3>
+            <p id="calculatedTipAmount">$0.00</p>
+            <h3>Total Amount:</h3>
+            <p id="totalAmount">$0.00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</div>
+
+
+</html>
